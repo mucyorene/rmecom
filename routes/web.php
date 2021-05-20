@@ -20,11 +20,11 @@ Route::get('/create','CategoriesController@create');
 Route::get('/editCat.{id}','CategoriesController@edit');
 Route::post('/catUpdate.{id}','CategoriesController@update');
 Route::get('/deleteCategory/{id}','CategoriesController@destroy');
-Route::get('/allCategories', 'CategoriesController@index');
+Route::get('/categories', 'CategoriesController@index');
 
 // products routes
 
-Route::get('/allProducts','ProductController@index');
+Route::get('/products','ProductController@index');
 Route::post('/postProduct','ProductController@store');
 Route::get('/createProduct','ProductController@create');
 Route::get('/editProduct.{id}','ProductController@edit');
