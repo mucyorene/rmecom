@@ -20,7 +20,7 @@ Route::get('/create','CategoriesController@create');
 Route::get('/editCat.{id}','CategoriesController@edit');
 Route::post('/catUpdate.{id}','CategoriesController@update');
 Route::get('/deleteCategory/{id}','CategoriesController@destroy');
-Route::get('/allCategories', 'CategoriesController@index');
+Route::get('/categories', 'CategoriesController@index');
 
 // products routes
 
