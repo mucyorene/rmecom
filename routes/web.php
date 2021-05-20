@@ -14,13 +14,13 @@ Route::get('/user/{id}/{names}', function ($id,$name) {
     return 'Hello this one is an id of someone '.$id.'And his name is '.$name;
 */
  
-Route::get('/', 'DashboardController@index');
+Route::get('/', 'CategoriesController@index');
 Route::post('/catPost','CategoriesController@store');
 Route::get('/create','CategoriesController@create');
 Route::get('/editCat.{id}','CategoriesController@edit');
 Route::post('/catUpdate.{id}','CategoriesController@update');
 Route::get('/deleteCategory/{id}','CategoriesController@destroy');
-Route::get('/allCategories', 'CategoriesController@index');
+Route::get('/allCategories', 'DashboardController@index');
 
 // products routes
 
