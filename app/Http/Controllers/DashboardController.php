@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Models\Categories;
 class DashboardController extends Controller
 {
     /**
@@ -26,6 +27,7 @@ class DashboardController extends Controller
         // $userId = auth()->user()->id;
         // $user = User::find($userId);
         // return view('Dashboard')->with('posts',$user->posts);
-        return view('home');
+        $cates = Categories::all();
+        return view('home',compact('cates'));
     }
 }
