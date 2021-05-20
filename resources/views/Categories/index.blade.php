@@ -24,8 +24,6 @@
                         <tr>
                         <th>#</th>
                         <th>Category Name</th>
-                        <th>Category Icon</th>
-                        <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -33,8 +31,6 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td>{{$category->name}}</td>
-                                <td><img src="{{$category->icon}}" height="100" width="100" alt=""></td>
-                                <td><a href="/editCat.{{$category->id}}" class="btn btn-outline-info btn-sm">Edit</a> | <a href="/deleteCategory/{{$category->id}}" class="btn btn-outline-danger btn-sm">Delete</a></td>
                             </tr>
                         @endforeach
                         
