@@ -1,0 +1,4 @@
+mysql://be7bd6749cdac2:ff409a7b@us-cdbr-east-03.cleardb.com/heroku_e3dc392d00e519c?reconnect=true
+
+	
+composer create-project --prefer-dist laravel/laravel larablog

@@ -26,3 +26,10 @@ Route::get('products','api\ProductController@index');
 
 Route::get('sliders','api\SliderController@index');
 
+Route::get('sliderApis','api\TestApi@index');
+Route::get('/gories','api\TestApi@create');
+
+Route::get('/allProjects','api\LiProjects@index');
+Route::post('/postProject','api\LiProjects@store');
+Route::post('/updateProject','api\LiProjects@update');
+Route::get('/deleteProject.{id}','api\LiProjects@destroy');
